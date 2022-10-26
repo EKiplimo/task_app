@@ -9,8 +9,9 @@ window.addEventListener('load',()=>{
             const task_el = document.createElement('div')
             task_el.classList.add('task');
 
-            const task_content_el = document.createElement('div');
+            const task_content_el = document.createElement('li');
             task_content_el.classList.add('content');
+            
 
             // make the task_content_el a child of the task_el(div)
             task_el.appendChild(task_content_el);
@@ -19,6 +20,7 @@ window.addEventListener('load',()=>{
             const task_input_el = document.createElement('input');
             task_input_el.classList.add('test')
             task_input_el.type ='text';
+            
             
             //Assign the task to the input field created above
             task_input_el.value = task;
